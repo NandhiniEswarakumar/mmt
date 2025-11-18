@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="MMT logo">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe39a"/>
+      <stop offset="50%" stop-color="#f5c45d"/>
+      <stop offset="100%" stop-color="#cf9a2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="16" fill="transparent"/>
+  <path fill="url(#gold)" d="M48 10L14 28v40l20 11V47l14-8v42l14-8V39l14 8v40l20-11V28L48 10zm0 8l28 14-8 4-20-10-20 10-8-4 28-14zm-24 26l8-4v36l-8-4V44zm40 0l8 4v28l-8 4V44z"/>
+</svg>
