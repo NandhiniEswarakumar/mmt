@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MMT Solutions | Services</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="site-header">
+		<div class="site-header__brand">
+			<div class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt=""></div>
+			<div>
+				<p class="brand-label">MMT Solutions</p>
+				<span class="brand-tagline">Electrical Works</span>
+			</div>
+		</div>
+		<button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="site-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html" class="is-active" aria-current="page">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a class="btn btn--primary nav-cta" href="tel:+919677593081">Call Now</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page-hero">
+			<p class="eyebrow">What We Deliver</p>
+			<h1>Specialized Service Portfolio</h1>
+			<p>Integrated electrical, mechanical, and finishing works executed with the rigor of an in-house engineering team.</p>
+		</section>
+
+		<section class="content-section services-list">
+			<div class="services__grid">
+				<article class="service-card">
+					<h3>CCTV & Surveillance</h3>
+					<p>Site audit, layout design, installation, networking, and AMC for IP or analog systems.</p>
+					<ul>
+						<li>Multi-site monitoring</li>
+						<li>Remote viewing setup</li>
+						<li>Operator training</li>
+					</ul>
+				</article>
+				<article class="service-card">
+					<h3>Plumbing Works</h3>
+					<p>High-pressure, fire safety, and utility water lines with leak-free guarantee.</p>
+					<ul>
+						<li>Booster pump commissioning</li>
+						<li>Drainage and STP tie-ins</li>
+						<li>Periodic maintenance</li>
+					</ul>
+				</article>
+				<article class="service-card">
+					<h3>Industrial Welding</h3>
+					<p>Fabrication, reinforcement, and on-site repairs adhering to WPS and safety norms.</p>
+					<ul>
+						<li>MIG, TIG, and arc support</li>
+						<li>Structural retrofits</li>
+						<li>Consumable planning</li>
+					</ul>
+				</article>
+				<article class="service-card">
+					<h3>UPS & Power Backup</h3>
+					<p>Supply, installation, and load balancing for uninterrupted production floors.</p>
+					<ul>
+						<li>Site readiness checklist</li>
+						<li>Battery health audits</li>
+						<li>AMC with SLA</li>
+					</ul>
+				</article>
+				<article class="service-card">
+					<h3>Manpower Supply</h3>
+					<p>Background-verified electricians, fitters, and multi-skilled technicians.</p>
+					<ul>
+						<li>Shift-based deployment</li>
+						<li>Safety gear compliance</li>
+						<li>Productivity reporting</li>
+					</ul>
+				</article>
+				<article class="service-card">
+					<h3>Painting & Coatings</h3>
+					<p>Protective and aesthetic finishes for interiors, exteriors, and equipment.</p>
+					<ul>
+						<li>Epoxy floor systems</li>
+						<li>Weatherproof facades</li>
+						<li>Turnkey villa painting</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="content-section">
+			<div class="section-heading">
+				<p class="eyebrow">Delivery Model</p>
+				<h2>Process Built For Accountability</h2>
+				<p>Each engagement is tracked with digital job cards and supervisor checklists.</p>
+			</div>
+			<div class="grid-two">
+				<div class="info-card">
+					<h3>01 • Assessment</h3>
+					<p>Site survey, documentation review, and risk assessment with photographic records.</p>
+				</div>
+				<div class="info-card">
+					<h3>02 • Execution</h3>
+					<p>Coordinated teams with daily progress logs, HSE compliance, and client walkthroughs.</p>
+				</div>
+				<div class="info-card">
+					<h3>03 • Validation</h3>
+					<p>Testing, commissioning, and preventive recommendations documented for each system.</p>
+				</div>
+				<div class="info-card">
+					<h3>04 • Support</h3>
+					<p>Post-project visits, call logging, and SLA-bound maintenance contracts.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> MMT Solutions. All rights reserved.</p>
+	</footer>
+
+	<script>
+		const yearSpan = document.getElementById('year');
+		if (yearSpan) {
+			yearSpan.textContent = new Date().getFullYear();
+		}
+
+		const navToggle = document.querySelector('.nav-toggle');
+		const siteNav = document.querySelector('.site-nav');
+		if (navToggle && siteNav) {
+			navToggle.addEventListener('click', () => {
+				const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+				navToggle.setAttribute('aria-expanded', String(!isOpen));
+				siteNav.classList.toggle('is-open');
+			});
+		}
+	</script>
+</body>
+</html>

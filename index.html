@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MMT Solutions | Electrical Works</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+		<div class="site-header__brand">
+			<div class="brand-icon" aria-hidden="true"><img src="assets/logo.svg" alt=""></div>
+			<div>
+				<p class="brand-label">MMT Solutions</p>
+				<span class="brand-tagline">Electrical Works</span>
+			</div>
+		</div>
+		<button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="site-nav">
+			<ul>
+				<li><a href="index.html" class="is-active" aria-current="page">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a class="btn btn--call nav-cta" href="tel:+919677593081">Call Now</a>
+		</nav>
+	</header>
+
+	<main>
+	<section class="hero">
+		<div class="content-width hero__grid">
+		<div class="hero__content">
+			<p class="hero__badge">Coimbatore • Malumichampatti</p>
+			<h1>MMT Solutions</h1>
+			<p class="hero__subtitle">Electrical Works (Industrial &amp; Home)</p>
+			<p class="hero__text">
+				Expert support for CCTV camera fixing &amp; services, plumbing, welding, UPS installation, manpower supply,
+				and professional painting works. We deliver dependable service with premium workmanship and responsive support.
+			</p>
+			<div class="hero__actions">
+				<a class="btn btn--call" href="tel:+919677593081">Call +91 96775 93081</a>
+				<a class="btn btn--ghost" href="#contact">Request A Callback</a>
+			</div>
+		</div>
+		<div class="hero__card">
+			<div class="brand-mark">MMT</div>
+			<p>Your trusted service partner.</p>
+		</div>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+	<div class="content-width">
+		<div class="section-heading">
+			<p class="eyebrow">Core Expertise</p>
+			<h2>Comprehensive Technical Services</h2>
+			<p>Single point contact for industrial and residential requirements with safety-first execution.</p>
+		</div>
+		<div class="services__grid">
+			<article class="service-card">
+				<h3>CCTV &amp; Security</h3>
+				<p>Installation, configuration, and maintenance ensuring 24/7 surveillance readiness.</p>
+			</article>
+			<article class="service-card">
+				<h3>Plumbing Solutions</h3>
+				<p>From emergency fixes to complete line layouts for homes, offices, and factories.</p>
+			</article>
+			<article class="service-card">
+				<h3>Welding &amp; Fabrication</h3>
+				<p>Structural and on-site welding with adherence to industrial safety standards.</p>
+			</article>
+			<article class="service-card">
+				<h3>UPS Installation</h3>
+				<p>Reliable backup power integration, load assessment, and preventive maintenance.</p>
+			</article>
+			<article class="service-card">
+				<h3>Manpower Supply</h3>
+				<p>Skilled technicians and supervisors to strengthen your on-ground operations.</p>
+			</article>
+			<article class="service-card">
+				<h3>Professional Painting</h3>
+				<p>Protective coatings and premium finishes for interiors, exteriors, and equipment.</p>
+			</article>
+		</div>
+	</div>
+	</section>
+
+	<section class="highlight">
+	<div class="content-width highlight__grid">
+		<div class="highlight__card">
+			<h2>Why Partner With MMT Solutions?</h2>
+			<ul>
+				<li>End-to-end project ownership with transparent updates.</li>
+				<li>Industrial-grade materials and safety-compliant execution.</li>
+				<li>Rapid response teams covering Coimbatore and nearby regions.</li>
+				<li>Dedicated single-point contact for repeat clients.</li>
+			</ul>
+		</div>
+		<div class="highlight__details">
+			<p class="eyebrow">Service Assurance</p>
+			<p>
+				We combine experienced technicians with a modern service desk to provide consistent support across
+				electrical, mechanical, and finishing works. Every project includes quality checks and post-service follow-up.
+			</p>
+			<div class="contact-badges">
+				<span>24/7 Support</span>
+				<span>Licensed Team</span>
+				<span>On-Site Warranty</span>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+	<div class="content-width">
+		<div class="section-heading">
+			<p class="eyebrow">Connect Now</p>
+			<h2>Let’s Schedule Your Service</h2>
+			<p>Share your requirement and we will respond within a business day.</p>
+		</div>
+		<div class="contact__grid">
+			<div class="contact__info">
+				<h3>Contact Details</h3>
+				<p><strong>Phone:</strong> <a href="tel:+919677593081">+91 96775 93081</a></p>
+				<p><strong>Email:</strong> <a href="mailto:service@mmt-solutions.in">service@mmt-solutions.in</a></p>
+				<p><strong>Address:</strong> Malumichampatti, Coimbatore - 641050</p>
+				<p><strong>Hours:</strong> Mon-Sat • 8:00 AM – 8:00 PM</p>
+			</div>
+			<form class="contact__form" action="https://formspree.io/f/maylvqkp" method="POST">
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="phone" required>
+
+				<label for="service">Service Needed</label>
+				<select id="service" name="service" required>
+					<option value="" disabled selected>Select a service</option>
+					<option value="cctv">CCTV &amp; Surveillance</option>
+					<option value="plumbing">Plumbing</option>
+					<option value="welding">Welding</option>
+					<option value="ups">UPS Installation</option>
+					<option value="manpower">Manpower Supply</option>
+					<option value="painting">Painting Works</option>
+				</select>
+
+				<label for="message">Project Details</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+
+				<button type="submit" class="btn btn--primary">Submit Request</button>
+			</form>
+		</div>
+	</div>
+	</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> MMT Solutions. All rights reserved.</p>
+	</footer>
+
+	<script>
+		const yearSpan = document.getElementById('year');
+		if (yearSpan) {
+			yearSpan.textContent = new Date().getFullYear();
+		}
+
+		const navToggle = document.querySelector('.nav-toggle');
+		const siteNav = document.querySelector('.site-nav');
+		if (navToggle && siteNav) {
+			navToggle.addEventListener('click', () => {
+				const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+				navToggle.setAttribute('aria-expanded', String(!isOpen));
+				siteNav.classList.toggle('is-open');
+			});
+		}
+	</script>
+	</body>
+</html>
